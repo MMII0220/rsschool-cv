@@ -74,7 +74,7 @@ function findOdd(A) {
 }
 ```
 
-<!-- --- -->
+---
 
 ### My Projets: :briefcase:
 
