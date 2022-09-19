@@ -4,25 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600;700&family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/e34e4f3bdb.js" crossorigin="anonymous"></script>
     <title>Html, Css Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <picture class="image__me">
-            <image class="me" src="./assets/img/me.png"  alt="Abdulloev Muhammadjon" />
-        </picture>
-        <article class="contact">
-            <i class="fa-solid fa-phone"></i><a href="tel:+79259150471" class="tel">+7 925 915 04 71</a>
-            <i class="fa-solid fa-envelope"></i><a href="mailto:abum202@mail.ru" class="email">abum202@mail.ru</a>
-            <i class="fa-brands fa-github"></i><a href="tel:+79259150471" class="github-profile">MMII0220</a>
-            <i class="fa-solid fa-location-crosshairs"></i><a href="https://goo.gl/maps/sWPo9xw2YpVZUN1WA" class="location">Russia, Moscow city, 11 Parkovaya, house 36</a>
-        </article>
-        <article class="skills">
-            
-        </article>
-    </header>
+    <div class="wrapper">
+        <header class="header">
+            <picture class="image__me">
+                <image class="me" src="./assets/img/me.png"  alt="Abdulloev Muhammadjon" />
+            </picture>
+            <div class="header__inner">
+                <article class="contact">
+                    <h3 class="sub__title">Contact me</h3>
+                    <div class="contact__inner">
+                        <a href="tel:+79259150471" class="link"><i class="fa-solid fa-phone"></i> +7 925 915 04 71</a>
+                        <a href="mailto:abum202@mail.ru" class="link"><i class="fa-solid fa-envelope"></i> abum202@mail.ru</a>
+                        <a href="tel:+79259150471" class="link"><i class="fa-brands fa-github"></i> MMII0220</a>
+                        <a href="https://goo.gl/maps/sWPo9xw2YpVZUN1WA" class="link"><i class="fa-solid fa-location-crosshairs"></i> Russia, Moscow city, 11 Parkovaya, house 36</a>
+                    </div>
+                </article>
+                <article class="skills">
+                    <h3 class="sub__title">Soft skills</h3>
+                    <div class="skills__inner">
+                        <div class="soft__skill">
+                            <label for="" class="soft__skill-text">Diligence</label>
+                            <input class="soft__skill-input" type="range" value="60">
+                        </div>
+                        <div class="soft__skill">
+                            <label for="" class="soft__skill-text">Creativity</label>
+                            <input class="soft__skill-input" type="range" value="80">
+                        </div>
+                        <div class="soft__skill">
+                            <label for="" class="soft__skill-text">Learnability</label>
+                            <input class="soft__skill-input" type="range" value="100">
+                        </div>
+                        <div class="soft__skill">
+                            <label for="" class="soft__skill-text">Sociability</label>
+                            <input class="soft__skill-input" type="range" value="90">
+                        </div>
+                    </div>
+                </article>
+                <article class="languages">
+                    <h3 class="sub__title">Languages <i class="fa-solid fa-language"></i></h3>
+                    <div class="languages__inner">
+                        <div class="language">
+                            <label for="" class="language-text">English</label>
+                            <input class="language-input" type="range" value="60">
+                        </div>
+                        <div class="language">
+                            <label for="" class="language-text">Russia</label>
+                            <input class="language-input" type="range" value="80">
+                        </div>
+                        <div class="language">
+                            <label for="" class="language-text">Tajik</label>
+                            <input class="language-input" type="range" value="100">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </header>
+        <section class="portfolio">
+            <h1 class="sup__title">Abdulloev<br>Muhammadjon</h1>
+            <h2 class="job">Junior Front-end developer</h2>
+            <div class="profile">
+                <h3 class="portfolio-sub__title"><i class="fa-solid fa-user"></i> PROFILE</h3>
+                <p class="text">
+                    I am 20 years old. I am from Tajikistan, Dushanbe. I am studing Front-end almost for 2 years. I am confident in my skills. I have good interpersonal skills and good team worker. Also, I have very willing to learn and develop new skills.
+                </p>
+            </div>
+            <div class="education">
+                <h3 class="portfolio-sub__title"><i class="fa-solid fa-user-graduate"></i> EDUCATION</h3>
+                <p class="education_text">
+                    I am 20 years old. I am from Tajikistan, Dushanbe. I am studing Front-end almost for 2 years. I am confident in my skills. I have good interpersonal skills and good team worker. Also, I have very willing to learn and develop new skills.
+                </p>
+            </div>
+            <div class="developer__skills">
+                <picture class="developer__skills-text">
+                    <img class="" src="./assets/img/hard skills.svg" alt="typing text">
+                </picture>
+                <div class="developer__skills-list">
+                    <img src="./assets/img/skills/html_original_wordmark_logo_icon_146478.svg" title="HTML5" alt="HTML5" width="50" height="50"/>
+                    <img src="./assets/img/skills/css_original_wordmark_logo_icon_146576.svg" title="CSS3" alt="CSS3" width="50" height="50"/>
+                    <img src="./assets/img/skills/javascript_original_logo_icon_146455.svg" title="Javascript" alt="Javascript" width="50" height="50"/>
+                    <img src="./assets/img/skills/react_original_wordmark_logo_icon_146375.svg" title="React" alt="React" width="50" height="50"/>
+                    <img src="./assets/img/skills/1280px-Babel_Logo.svg.png" title="React" alt="Babel" width="50" height="50"/>
+                    <img src="./assets/img/skills/webpack_plain_logo_icon_146297.png" title="React" alt="React" width="50" height="50"/>
+                    <img src="./assets/img/skills/typescript_original_logo_icon_146317.svg" title="Typescript" alt="Typescript" width="50" height="50"/>
+                    <img src="./assets/img/skills/c_original_logo_icon_146611.svg" title="C" alt="C" width="50" height="50"/>
+                    <img src="./assets/img/skills/bootstrap_plain_logo_icon_146619.svg" title="Bootstrap" alt="Bootstrap" width="50" height="50"/>
+                    <img src="./assets/img/skills/Photoshop_CC_icon.png" title="Bootstrap" alt="Bootstrap" width="50" height="50"/>
+                    <img src="./assets/img/skills/sass_original_logo_icon_146350.svg" title="SASS" alt="SASS" width="50" height="50"/>
+                    <img src="./assets/img/skills/file_type_scss_icon_130177.svg" title="SCSS" alt="SCSS" width="50" height="50"/>
+                    <img src="./assets/img/skills/file_type_git_icon_130581.svg" title="Git" alt="Git" width="50" height="50"/>
+                    <img src="./assets/img/skills/github_git_hub_logo_icon_132878.svg" title="GitHub" alt="GitHub" width="50" height="50"/>
+                    <img src="./assets/img/skills/gitlab_original_logo_icon_146503.svg" title="GitLab" alt="GitLab" width="50" height="50"/>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
 
@@ -30,8 +113,7 @@
 <!-- <i class="fa-solid fa-envelope"></i> email -->
 <!-- <i class="fa-brands fa-github"></i> github -->
 <!-- <i class="fa-solid fa-location-crosshairs"></i> location -->
+<!-- <i class="fa-solid fa-language"></i> language -->
 <!-- <i class="fa-solid fa-user"></i> profile -->
 <!-- <i class="fa-solid fa-computer"></i> briefcase -->
 <!-- <i class="fa-solid fa-user-graduate"></i> education -->
-
-

@@ -1,5 +1,123 @@
+/* 
+font-family: 'DynaPuff', cursive;
+font-family: 'Libre Bodoni', serif;
+*/
 * {
     margin: 0;
     padding: 0;
     margin: 0;
 }
+
+body {
+    background-color: lightblue;
+}
+input {
+    pointer-events: none;
+}
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Image Me
+****************************/
+.image__me {
+    /* width: 260px;
+    height: auto;
+    transform: rotate(-3deg);
+    rotate: 2px; */
+}
+.me {
+    width: 260px;
+    height: auto;
+    transform: rotate(-3deg);
+}
+.sub__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(221, 217, 217);
+    background-color: green;
+    border-radius: 10px;
+    font-size: calc(25px + 0.8vw);
+    margin-bottom: 20px;
+}
+
+/* Contact
+************************/
+.contact__inner {
+    display: flex;
+    flex-direction: column;
+}
+.link {
+    font-size: calc(12px + 0.5vw);
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    transition: .2s color ease;
+}
+.link:last-child {
+    margin-bottom: 7%;
+}
+.link:hover {
+    color: red;
+}
+
+/* Soft Skills
+******************************/
+.soft__skill-text {
+    font-size: calc(12px + 0.5vw);
+}
+.soft__skill:last-child {
+    margin-bottom: 5%;
+}
+.soft__skill {
+    margin-bottom: 10px;
+}
+
+/* Languages
+********************************/
+.language {
+    margin-bottom: 10px;
+}
+.language-text {
+    font-size: calc(12px + 0.5vw);
+}
+.language:last-child {
+    margin-bottom: 5%;
+}
+
+/* Portfolio
+*********************************/
+.sup__title {
+    font-size: calc(40px + 1vw);
+    text-transform: uppercase;
+}
+.job {
+    font-size: calc(25px + 1vw);
+    color: blue;
+}
+
+/* Profile
+**************************************/
+.portfolio-sub__title {
+    font-size: calc(25px + 0.8vw);
+}
+.fa-user {
+    color: darkblue;
+}
+
+/* Developer Skills List
+*************************************/
+.developer__skills-list {
+}
+
+/* font-size: calc(25px + 0.8vw); */
