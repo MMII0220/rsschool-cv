@@ -28,16 +28,15 @@ a {
 }
 .header {
     border-right: 10px solid black;
-    padding-right: 20px;
+    padding: 0 3%;
 }
 
 /* Image Me
 ****************************/
 .image__me {
-    /* width: 260px;
-    height: auto;
-    transform: rotate(-3deg);
-    rotate: 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .me {
     width: 260px;
@@ -69,7 +68,7 @@ a {
     transition: .2s color ease;
 }
 .link:last-child {
-    margin-bottom: 7%;
+    margin-bottom: 10%;
 }
 .link:hover {
     color: red;
@@ -81,7 +80,7 @@ a {
     font-size: calc(12px + 0.5vw);
 }
 .soft__skill:last-child {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .soft__skill {
     margin-bottom: 10px;
@@ -98,11 +97,17 @@ a {
 .language:last-child {
     margin-bottom: 5%;
 }
+.fa-language {
+    margin-top: 8px;
+    margin-left: 10px;
+}
 
 /* Portfolio
 *********************************/
 .portfolio {
     width: 60%;
+    margin-right: 4%;
+    margin-left: 1%;
 }
 .sup__title {
     font-size: calc(40px + 1vw);
