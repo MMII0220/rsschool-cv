@@ -23,8 +23,12 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+.header {
+    border-right: 10px solid black;
+    padding-right: 20px;
 }
 
 /* Image Me
@@ -97,6 +101,9 @@ a {
 
 /* Portfolio
 *********************************/
+.portfolio {
+    width: 60%;
+}
 .sup__title {
     font-size: calc(40px + 1vw);
     text-transform: uppercase;
@@ -104,20 +111,43 @@ a {
 .job {
     font-size: calc(25px + 1vw);
     color: blue;
+    margin-bottom: 12%;
 }
 
 /* Profile
 **************************************/
-.portfolio-sub__title {
-    font-size: calc(25px + 0.8vw);
+.profile {
+    margin-bottom: 5%;
 }
-.fa-user {
+.text {
+    font-size: calc(13px + 0.6vw);
+}
+.portfolio-sub__title {
+    font-size: calc(23px + 0.8vw);
+    margin-bottom: 3%;
+}
+.fa-user-graduate {
     color: darkblue;
 }
 
 /* Developer Skills List
 *************************************/
+.type__text {
+    width: 100%;
+}
 .developer__skills-list {
 }
 
 /* font-size: calc(25px + 0.8vw); */
+.fa-user {
+    color: darkblue;
+}
+
+/* Education
+******************************************/
+.education {
+    margin-bottom: 10%;
+}
+.education_text {
+    font-size: calc(13px + 0.6vw);
+}
